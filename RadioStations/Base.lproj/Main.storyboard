@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Pwm-Cg-rgh">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Internet Radio Stations-->
+        <scene sceneID="W0W-Y7-tzA">
+            <objects>
+                <tableViewController id="nBu-un-YvG" customClass="RadioStationTableViewController" customModule="RadioStations" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="a46-KK-Yhl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Start typing a DJ name..." id="TJO-sh-tCo">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="nBu-un-YvG" id="8uf-GO-G8k"/>
+                            </connections>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RadioStationTableViewCell" rowHeight="90" id="8om-Je-jmW" customClass="RadioStationTableViewCell" customModule="RadioStations" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="72" width="375" height="90"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8om-Je-jmW" id="YhH-Kx-nT3">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Iur-3y-znC">
+                                            <rect key="frame" x="16" y="10" width="70" height="70"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="70" id="OoT-6U-V7c"/>
+                                                <constraint firstAttribute="height" constant="70" id="zI3-2E-ysn"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gnz-7L-mQE">
+                                            <rect key="frame" x="94" y="10" width="265" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="H8c-aY-wCc"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VTv-d8-13v">
+                                            <rect key="frame" x="94" y="34" width="265" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="JQy-N1-Bdl"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DJ Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KZ8-3Y-nWs">
+                                            <rect key="frame" x="94" y="58" width="265" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="baN-dJ-Fve"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Iur-3y-znC" firstAttribute="leading" secondItem="YhH-Kx-nT3" secondAttribute="leading" constant="16" id="1aa-pH-xZC"/>
+                                        <constraint firstAttribute="trailing" secondItem="Gnz-7L-mQE" secondAttribute="trailing" constant="16" id="465-qL-OI9"/>
+                                        <constraint firstItem="Iur-3y-znC" firstAttribute="top" secondItem="YhH-Kx-nT3" secondAttribute="top" constant="10" id="Ksu-eG-faZ"/>
+                                        <constraint firstItem="Gnz-7L-mQE" firstAttribute="top" secondItem="YhH-Kx-nT3" secondAttribute="top" constant="10" id="SeO-Um-ul9"/>
+                                        <constraint firstItem="VTv-d8-13v" firstAttribute="leading" secondItem="Iur-3y-znC" secondAttribute="trailing" constant="8" id="TF4-Ed-E4q"/>
+                                        <constraint firstItem="KZ8-3Y-nWs" firstAttribute="leading" secondItem="Iur-3y-znC" secondAttribute="trailing" constant="8" id="Xo6-t0-DC1"/>
+                                        <constraint firstItem="VTv-d8-13v" firstAttribute="trailing" secondItem="YhH-Kx-nT3" secondAttribute="trailingMargin" id="d4p-dI-9KB"/>
+                                        <constraint firstItem="KZ8-3Y-nWs" firstAttribute="top" secondItem="VTv-d8-13v" secondAttribute="bottom" constant="3" id="eTu-h8-uVg"/>
+                                        <constraint firstItem="Gnz-7L-mQE" firstAttribute="leading" secondItem="Iur-3y-znC" secondAttribute="trailing" constant="8" id="mC1-pA-0gd"/>
+                                        <constraint firstItem="VTv-d8-13v" firstAttribute="top" secondItem="Gnz-7L-mQE" secondAttribute="bottom" constant="3" id="o3Y-gm-8XD"/>
+                                        <constraint firstItem="KZ8-3Y-nWs" firstAttribute="trailing" secondItem="YhH-Kx-nT3" secondAttribute="trailingMargin" id="yRj-UX-nTU"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="stationDJLabel" destination="KZ8-3Y-nWs" id="sDy-nA-8jP"/>
+                                    <outlet property="stationDescriptionLabel" destination="VTv-d8-13v" id="wcV-Xc-aIZ"/>
+                                    <outlet property="stationImageView" destination="Iur-3y-znC" id="x1B-zD-l56"/>
+                                    <outlet property="stationTitleLabel" destination="Gnz-7L-mQE" id="NuH-ok-5ug"/>
+                                    <segue destination="8cI-jo-NsO" kind="show" identifier="RadioStationDetailViewController" id="RlD-x2-ONV"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="nBu-un-YvG" id="0Y5-NM-Iig"/>
+                            <outlet property="delegate" destination="nBu-un-YvG" id="vOt-cI-pcT"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Internet Radio Stations" id="UC6-4K-8Kt">
+                        <barButtonItem key="backBarButtonItem" title="Stations" id="wKr-UA-h6g"/>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hpn-mF-G4v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="789.60000000000002" y="116.49175412293854"/>
+        </scene>
+        <!--Radio Station Detail View Controller-->
+        <scene sceneID="5bw-51-qph">
+            <objects>
+                <viewController id="8cI-jo-NsO" customClass="RadioStationDetailViewController" customModule="RadioStations" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SmL-uq-68E">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hUC-S2-Xpj">
+                                <rect key="frame" x="38" y="92" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="hUC-S2-Xpj" secondAttribute="height" multiplier="75:32" constant="-403.125" id="gV5-MV-TPI"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="dKO-T4-fic">
+                                <rect key="frame" x="115" y="412" width="145" height="134.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qWT-U5-CH2">
+                                        <rect key="frame" x="0.0" y="0.0" width="145" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genre label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lsf-QY-hvc">
+                                        <rect key="frame" x="0.0" y="28.5" width="145" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DJ label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KQK-qv-hh7">
+                                        <rect key="frame" x="0.0" y="57" width="145" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DJ email label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E1w-tt-ug9">
+                                        <rect key="frame" x="0.0" y="85.5" width="145" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="# of Listeners label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Omf-x1-Rer">
+                                        <rect key="frame" x="0.0" y="114" width="145" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dKO-T4-fic" firstAttribute="top" secondItem="hUC-S2-Xpj" secondAttribute="bottom" constant="20" id="FRw-xY-mtt"/>
+                            <constraint firstItem="dKO-T4-fic" firstAttribute="centerX" secondItem="SmL-uq-68E" secondAttribute="centerX" id="Md9-75-dHO"/>
+                            <constraint firstItem="hUC-S2-Xpj" firstAttribute="width" secondItem="SmL-uq-68E" secondAttribute="width" multiplier="0.8" id="UCh-IJ-6Ny"/>
+                            <constraint firstItem="hUC-S2-Xpj" firstAttribute="centerX" secondItem="SmL-uq-68E" secondAttribute="centerX" id="Zba-Ob-URv"/>
+                            <constraint firstItem="hUC-S2-Xpj" firstAttribute="top" secondItem="3Gk-o6-TXK" secondAttribute="top" constant="28" id="eZG-CU-nBG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3Gk-o6-TXK"/>
+                    </view>
+                    <connections>
+                        <outlet property="stationDetailDJEmailLabel" destination="E1w-tt-ug9" id="Yp0-rb-FO1"/>
+                        <outlet property="stationDetailDJLabel" destination="KQK-qv-hh7" id="gao-bQ-zPm"/>
+                        <outlet property="stationDetailGenreLabel" destination="Lsf-QY-hvc" id="KFl-aR-uO3"/>
+                        <outlet property="stationDetailLargeImageView" destination="hUC-S2-Xpj" id="334-qJ-6dt"/>
+                        <outlet property="stationDetailListenerCountLabel" destination="Omf-x1-Rer" id="xae-Xo-hI1"/>
+                        <outlet property="stationDetailTitleLabel" destination="qWT-U5-CH2" id="udW-O5-TwZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qPa-u3-pj7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1712.8" y="117.39130434782609"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9l1-ND-lXK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Pwm-Cg-rgh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Qp4-tI-W67">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="nBu-un-YvG" kind="relationship" relationship="rootViewController" id="u9z-qz-7yT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6dw-FV-Gyj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-162" y="118"/>
+        </scene>
+    </scenes>
+</document>
