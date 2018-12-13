@@ -1,0 +1,3 @@
+[submodule "ImageDownloader"]
+	path = ImageDownloader
+	url = git@github.com:lingoslinger/ImageDownloader.git
