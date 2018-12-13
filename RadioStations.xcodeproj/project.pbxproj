@@ -20,8 +20,8 @@
 		9D6C7EDE21A1A67E002295F9 /* placeholder.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 9D6C7EDD21A1A67E002295F9 /* placeholder.PNG */; };
 		9D7DFB5021B23DD900A30BA4 /* Webservice.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D7DFB4F21B23DD900A30BA4 /* Webservice.plist */; };
 		9D7DFB6121B2414900A30BA4 /* WebservicePropertyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7DFB6021B2414900A30BA4 /* WebservicePropertyList.swift */; };
-		9D7DFB6321B244A200A30BA4 /* Bundle+Decoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7DFB6221B244A200A30BA4 /* Bundle+Decoding.swift */; };
-		9D7DFB6521B33EA500A30BA4 /* Data+Decoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7DFB6421B33EA500A30BA4 /* Data+Decoding.swift */; };
+		9D7DFB6321B244A200A30BA4 /* Bundle+WebservicePListDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7DFB6221B244A200A30BA4 /* Bundle+WebservicePListDecoding.swift */; };
+		9D7DFB6521B33EA500A30BA4 /* Data+RadioStationListDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7DFB6421B33EA500A30BA4 /* Data+RadioStationListDecoding.swift */; };
 		9D7DFB6721B70D9600A30BA4 /* imageNotFound.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D7DFB6621B70D9600A30BA4 /* imageNotFound.png */; };
 		9D7DFB6C21B8807D00A30BA4 /* ViewController+ErrorDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7DFB6B21B8807D00A30BA4 /* ViewController+ErrorDialog.swift */; };
 		9DEFBAB621B1E0120029EB16 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEFBAB321B1E0120029EB16 /* Channel.swift */; };
@@ -75,8 +75,8 @@
 		9D6C7EDD21A1A67E002295F9 /* placeholder.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.PNG; sourceTree = "<group>"; };
 		9D7DFB4F21B23DD900A30BA4 /* Webservice.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Webservice.plist; sourceTree = "<group>"; };
 		9D7DFB6021B2414900A30BA4 /* WebservicePropertyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebservicePropertyList.swift; sourceTree = "<group>"; };
-		9D7DFB6221B244A200A30BA4 /* Bundle+Decoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Decoding.swift"; sourceTree = "<group>"; };
-		9D7DFB6421B33EA500A30BA4 /* Data+Decoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Decoding.swift"; sourceTree = "<group>"; };
+		9D7DFB6221B244A200A30BA4 /* Bundle+WebservicePListDecoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+WebservicePListDecoding.swift"; sourceTree = "<group>"; };
+		9D7DFB6421B33EA500A30BA4 /* Data+RadioStationListDecoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+RadioStationListDecoding.swift"; sourceTree = "<group>"; };
 		9D7DFB6621B70D9600A30BA4 /* imageNotFound.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imageNotFound.png; sourceTree = "<group>"; };
 		9D7DFB6B21B8807D00A30BA4 /* ViewController+ErrorDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+ErrorDialog.swift"; sourceTree = "<group>"; };
 		9DEFBAB321B1E0120029EB16 /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Channel.swift; path = "RadioStations/Data Models/Channel.swift"; sourceTree = SOURCE_ROOT; };
@@ -144,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				9D35618621A0A6CD0021C044 /* RadioStationURLSession.swift */,
+				9D7DFB6221B244A200A30BA4 /* Bundle+WebservicePListDecoding.swift */,
 				9D7DFB6021B2414900A30BA4 /* WebservicePropertyList.swift */,
 				9D7DFB4F21B23DD900A30BA4 /* Webservice.plist */,
 			);
@@ -153,6 +154,7 @@
 		9D35618821A0A7CD0021C044 /* Data Models */ = {
 			isa = PBXGroup;
 			children = (
+				9D7DFB6421B33EA500A30BA4 /* Data+RadioStationListDecoding.swift */,
 				9DEFBAB521B1E0120029EB16 /* RadioStationList.swift */,
 				9DEFBAB321B1E0120029EB16 /* Channel.swift */,
 				9DEFBAB421B1E0120029EB16 /* Playlist.swift */,
@@ -163,8 +165,6 @@
 		9D35619321A0DADD0021C044 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				9D7DFB6221B244A200A30BA4 /* Bundle+Decoding.swift */,
-				9D7DFB6421B33EA500A30BA4 /* Data+Decoding.swift */,
 				9D7DFB6B21B8807D00A30BA4 /* ViewController+ErrorDialog.swift */,
 			);
 			path = Extensions;
@@ -281,9 +281,9 @@
 			files = (
 				9DEFBAB621B1E0120029EB16 /* Channel.swift in Sources */,
 				9D35619021A0AE620021C044 /* RadioStationDetailViewController.swift in Sources */,
-				9D7DFB6521B33EA500A30BA4 /* Data+Decoding.swift in Sources */,
+				9D7DFB6521B33EA500A30BA4 /* Data+RadioStationListDecoding.swift in Sources */,
 				9D35615821A0A2B70021C044 /* RadioStationTableViewController.swift in Sources */,
-				9D7DFB6321B244A200A30BA4 /* Bundle+Decoding.swift in Sources */,
+				9D7DFB6321B244A200A30BA4 /* Bundle+WebservicePListDecoding.swift in Sources */,
 				9DEFBAB721B1E0120029EB16 /* Playlist.swift in Sources */,
 				9D7DFB6C21B8807D00A30BA4 /* ViewController+ErrorDialog.swift in Sources */,
 				9D7DFB6121B2414900A30BA4 /* WebservicePropertyList.swift in Sources */,

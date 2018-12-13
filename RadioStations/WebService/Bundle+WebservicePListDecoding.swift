@@ -1,5 +1,5 @@
 //
-//  Bundle+WebserviceDecoding.swift
+//  Bundle+WebservicePListDecoding.swift
 //  RadioStations
 //
 //  Created by Allan Evans on 11/30/18.
