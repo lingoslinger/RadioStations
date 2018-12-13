@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9D07D2E421C2C4BF00D2AE93 /* ImageDownloader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D07D2E321C2C4A900D2AE93 /* ImageDownloader.framework */; };
-		9D07D2E521C2C4BF00D2AE93 /* ImageDownloader.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9D07D2E321C2C4A900D2AE93 /* ImageDownloader.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9D35615621A0A2B70021C044 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D35615521A0A2B70021C044 /* AppDelegate.swift */; };
 		9D35615821A0A2B70021C044 /* RadioStationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D35615721A0A2B70021C044 /* RadioStationTableViewController.swift */; };
 		9D35615B21A0A2B70021C044 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D35615921A0A2B70021C044 /* Main.storyboard */; };
@@ -29,23 +27,6 @@
 		9DEFBAB821B1E0120029EB16 /* RadioStationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DEFBAB521B1E0120029EB16 /* RadioStationList.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		9D07D2E221C2C4A900D2AE93 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9D07D2DE21C2C4A900D2AE93 /* ImageDownloader.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 9D59974421C02CA400BAA659;
-			remoteInfo = ImageDownloader;
-		};
-		9D07D2E621C2C4BF00D2AE93 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9D07D2DE21C2C4A900D2AE93 /* ImageDownloader.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 9D59974321C02CA400BAA659;
-			remoteInfo = ImageDownloader;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		9D3561BB21A196860021C044 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -53,7 +34,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9D07D2E521C2C4BF00D2AE93 /* ImageDownloader.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -61,7 +41,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9D07D2DE21C2C4A900D2AE93 /* ImageDownloader.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ImageDownloader.xcodeproj; path = ImageDownloader/ImageDownloader.xcodeproj; sourceTree = "<group>"; };
 		9D35615221A0A2B60021C044 /* RadioStations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RadioStations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D35615521A0A2B70021C044 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D35615721A0A2B70021C044 /* RadioStationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioStationTableViewController.swift; sourceTree = "<group>"; };
@@ -89,25 +68,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D07D2E421C2C4BF00D2AE93 /* ImageDownloader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9D07D2DF21C2C4A900D2AE93 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				9D07D2E321C2C4A900D2AE93 /* ImageDownloader.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		9D35614921A0A2B60021C044 = {
 			isa = PBXGroup;
 			children = (
-				9D07D2DE21C2C4A900D2AE93 /* ImageDownloader.xcodeproj */,
 				9D35615421A0A2B60021C044 /* RadioStations */,
 				9D35615321A0A2B60021C044 /* Products */,
 			);
@@ -202,7 +171,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				9D07D2E721C2C4BF00D2AE93 /* PBXTargetDependency */,
 			);
 			name = RadioStations;
 			productName = RadioStations;
@@ -235,28 +203,12 @@
 			mainGroup = 9D35614921A0A2B60021C044;
 			productRefGroup = 9D35615321A0A2B60021C044 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 9D07D2DF21C2C4A900D2AE93 /* Products */;
-					ProjectRef = 9D07D2DE21C2C4A900D2AE93 /* ImageDownloader.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				9D35615121A0A2B60021C044 /* RadioStations */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		9D07D2E321C2C4A900D2AE93 /* ImageDownloader.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = ImageDownloader.framework;
-			remoteRef = 9D07D2E221C2C4A900D2AE93 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		9D35615021A0A2B60021C044 /* Resources */ = {
@@ -295,14 +247,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		9D07D2E721C2C4BF00D2AE93 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ImageDownloader;
-			targetProxy = 9D07D2E621C2C4BF00D2AE93 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9D35615921A0A2B70021C044 /* Main.storyboard */ = {
