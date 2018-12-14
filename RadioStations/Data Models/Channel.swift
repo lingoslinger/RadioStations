@@ -60,5 +60,4 @@ struct Channel : Codable {
 		xlimage = try values.decodeIfPresent(String.self, forKey: .xlimage)
 	}
 
-
 }
