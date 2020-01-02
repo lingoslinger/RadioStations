@@ -221,6 +221,7 @@
 				TargetAttributes = {
 					9D35615121A0A2B60021C044 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1030;
 					};
 				};
 			};
@@ -455,7 +456,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.lingo-slingers.RadioStations";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -475,7 +476,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.lingo-slingers.RadioStations";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
